@@ -10,13 +10,16 @@
   </head>
 
   <body>
+      <!-- Link to view highscores -->
     <div class="high-scores"><a href="highscores.html">View Highscores</a></div>
 
+    <!-- Set up for timer -->
     <div class="timer">
       Time:
-      <div id="time">0</div>
+      <div id="countdown">0</div>
     </div>
 
+    <!-- Landing page to start quiz -->
     <div id="start-container">
       <div id="start-screen">
         <h1></h1>
@@ -25,21 +28,24 @@
       </div>
     </div>
 
+    <!-- Question page -->
     <div id="question-container">
-      <div id="question">
+      <div id="question" class="hide">
         <h2 id="title"></h2>
         <div id="timer"></div>
         <div id="choices"></div>
       </div>
     </div>
 
+    <!-- End of quiz page -->
     <div id="end-container">
-      <div id="end-screen">
+      <div id="end-screen" class="hide">
         <h2></h2>
         <p></p>
         <p>
-          <input />
-          <button id="submit"></button>
+            Enter Initials:
+          <input type="text" id="initials"/>
+          <button id="submit">Submit</button>
         </p>
       </div>
 
