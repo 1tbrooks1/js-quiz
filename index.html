@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="develop/assets/css/style.css" />
+    <title>JavaScript Quiz</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <body>
+    <div class="high-scores"><a href="highscores.html">View Highscores</a></div>
 
-<body>
-    <div id="quiz"></div>
-    <button id="submit"></button>
-    <div id="results"></div>
-</body>
+    <div class="timer">
+      Time:
+      <div id="time">0</div>
+    </div>
 
+    <div id="start-container">
+      <div id="start-screen">
+        <h1></h1>
+        <p></p>
+        <button id="start">Begin Quiz</button>
+      </div>
+    </div>
+
+    <div id="question-container">
+      <div id="question">
+        <h2 id="title"></h2>
+        <div id="timer"></div>
+        <div id="choices"></div>
+      </div>
+    </div>
+
+    <div id="end-container">
+      <div id="end-screen">
+        <h2></h2>
+        <p></p>
+        <p>
+          <input />
+          <button id="submit"></button>
+        </p>
+      </div>
+
+      <div id="feedback"></div>
+    </div>
+
+    <script src="develop/assets/js/script.js"></script>
+  </body>
 </html>

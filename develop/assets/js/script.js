@@ -1,10 +1,46 @@
-var quizContainer = document.getElementById('quiz');
-var resultContainer = document.getElementById('results');
+var startButton  = document.getElementById('start');
+var questionEl  = document.getElementById('question');
+var choicesEl = document.getElementById('choices');
 var submitButton = document.getElementById('submit');
+var timerEl = document.getElementById('timer');
+var quizQuestions = [
+    {
+        question: "blah blah blah",
+        answers: [
+             "blah",
+             "blah",
+             "blah"
+        ],
+        rightAnswer: "blah"
+    },
+    {
+        question: "blah blah blah",
+        answers: [
+             "blah",
+             "blah",
+             "blah"
+        ],
+        rightAnswer: "blah"
+    },
+    {
+        question: "blah blah blah",
+        answers: [
+             "blah",
+             "blah",
+             "blah"
+        ],
+        rightAnswer: "blah"
+    }
+];         
 
-function buildQuiz() {}
+function startQuiz() {
+    
+    
+
+}
 
 function showResults() {}
 
-buildQuiz();
+startQuiz();
 
+startButton.addEventListener('click', startQuiz);
