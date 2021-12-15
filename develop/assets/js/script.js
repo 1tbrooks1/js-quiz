@@ -44,10 +44,29 @@ var quizQuestions = [
 ];         
 
 function startQuiz() {
+    // this will hide the start screen once the quiz begins
+    var startScreen = document.getElementById("start-screen");
+    startScreen.setAttribute("class", "start hide");
+
+    // this will cause the questions to appear
+    questionEl.setAttribute("class", "");
+
+    // timer will begin to count
+    timerId = setInterval(function() {
+        countdown--;
+        timerEl.innerHTML = countdown;
+    }, 1000);
+
+    if (countdown <= 0);
+    stopQuiz();
+}
+
+
+
     
     
 
-}
+
 
 function showResults() {}
 
@@ -58,4 +77,4 @@ startQuiz();
 startButton.addEventListener('click', startQuiz);
 
 // Clicking submit button stores initials and score
-submitButton.addEventListener('click', saveHighscore)
+submitButton.addEventListener('click', saveHighscore);
