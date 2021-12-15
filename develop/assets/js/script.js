@@ -5,7 +5,7 @@ var choicesEl = document.getElementById('choices');
 var submitButton = document.getElementById('submit');
 var timerEl = document.getElementById('countdown');
 var initialsEL = document.getElementById('initials');
-var feedback = document.getElementById('feedback');
+var feedbackEl = document.getElementById('feedback');
 
 // Variables for timer and quiz questions
 var timerId;
@@ -100,6 +100,20 @@ function grabQuestion() {
     choicesEl.children[3].addEventListener("click", function(event) {
         answerClick(choicesEl.children[3]);
     });
+}
+
+function answerClick(answerChoice) {
+    // compare users choice to correct answer
+    if (answerChoice.innerHTML != quizQuestions[currentQuestion].rightAnswer) {
+        // subtract time from timer
+        time -= 15;
+        // provide feedback that the answer was wrong 
+        feedbackEl.innerHTML = "Wrong";
+    }
+    else {
+        feedbackEl.innerHTML = "Correct";
+    }
+
 }
 
 
