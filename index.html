@@ -5,52 +5,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="develop/assets/css/style.css" />
+    <link rel="stylesheet" href="develop/assets/css/style.css"/>
     <title>JavaScript Quiz</title>
   </head>
 
   <body>
-      <!-- Link to view highscores -->
-    <div class="high-scores"><a href="highscores.html">View Highscores</a></div>
+      <!-- Link to view high scores -->
+    <div class="scores"><a href="highscores.html">View Highscores</a></div>
 
     <!-- Set up for timer -->
     <div class="timer">
       Time:
-      <div id="countdown">0</div>
+      <span id="time">0</span>
     </div>
 
     <!-- Landing page to start quiz -->
-    <div id="start-container">
-      <div id="start-screen">
-        <h1></h1>
+    <div class="main-container">
+      <div id="start-screen" class="start">
+        <h1>JavaScript Quiz Challenge</h1>
         <p></p>
         <button id="start">Begin Quiz</button>
       </div>
-    </div>
+    
 
     <!-- Question page -->
-    <div id="question-container">
-      <div id="question" class="hide">
-        <h2 id="title"></h2>
-        <div id="timer"></div>
-        <div id="choices"></div>
+    
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <button id="choiceA" class="choices"></button>
+        <button id="choiceB" class="choices"></button>
+        <button id="choiceC" class="choices"></button>
+        <button id="choiceD" class="choices"></button>
       </div>
-    </div>
+    
 
     <!-- End of quiz page -->
-    <div id="end-container">
+    
       <div id="end-screen" class="hide">
         <h2></h2>
-        <p></p>
+        <p>Your final score is: <span class="final-score"></span>.</p>
         <p>
-            Enter Initials:
-          <input type="text" id="initials"/>
+          <input type="text" id="initials" placeholder="Enter Initials"/>
           <button id="submit">Submit</button>
         </p>
       </div>
 
-      <div id="feedback"></div>
+      <div id="feedback" class="feedback-hide"></div>
     </div>
+    
 
     <script src="develop/assets/js/script.js"></script>
   </body>
