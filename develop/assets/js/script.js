@@ -13,40 +13,51 @@ var optionD = document.getElementById("choiceD");
 var optionButton = document.querySelector("#choices");
 var highScoreScreen = document.getElementById("highscore-screen");
 var scoresList = document.getElementById("score-list");
+var highScoreButton = document.getElementById("view-highscores");
+var clearScores = document.getElementById("clear-scores");
+var playAgain = document.getElementById("play-again")
 
 
 var questions = [
   {
-    title: "blah",
-    a: "bleh",
-    b: "blad",
-    c: "blas",
-    d: "blaa",
-    answer: "bleh",
+    title: "Which of the following functions is a valid type of function that javascript supports?",
+    a: "Named Function",
+    b: "Anonymous Function",
+    c: "Both A and B",
+    d: "None of the above",
+    answer: "Both A and B",
   },
   {
-    title: "joe byron",
-    a: "hey",
-    b: "now",
-    c: "hey",
-    d: "now",
-    answer: "hey",
+    title: "Which method returns the character at the specified index?",
+    a: "characterAt()",
+    b: "getCharAt()",
+    c: "charAt()",
+    d: "None of the above",
+    answer: "charAt()",
   },
   {
-    title: "bing bong",
-    a: "blah",
-    b: "blah",
-    c: "blah",
-    d: "blah",
-    answer: "blah",
+    title: "Which of the following is not a mouse event?",
+    a: "onmousescroller",
+    b: "onclick",
+    c: "onmouseover",
+    d: "onmousemove",
+    answer: "onmousescroller",
   },
   {
-    title: "take me out to dinner",
-    a: "blah",
-    b: "blah",
-    c: "blah",
-    d: "blah",
-    answer: "blah",
+    title: "The opposite of onmouseover is_____?",
+    a: "onmouseoff",
+    b: "onmouseout",
+    c: "onmouseunder",
+    d: "onnotmouseover",
+    answer: "onmouseout",
+  },
+  {
+    title: " How to know the number of elements of a form??",
+    a: "document.myform.elements.count",
+    b: "document.myform.length",
+    c: "document.myform.count",
+    d: "document.myform.elements.length",
+    answer: "document.myform.elements.length",
   },
 ];
 
@@ -111,7 +122,7 @@ var checkAnswer = function (event) {
 
   currentQuestionIndex++;
 
-  if (currentQuestionIndex === 4) {
+  if (currentQuestionIndex === 5) {
     endQuiz();
   } else {
     getQuestion();
@@ -162,6 +173,8 @@ var saveHighScore = function () {
 
 var displayHighScore = function () {
     highScores = JSON.parse(localStorage.getItem("highScores"));
+    var startScreen = document.getElementById("start-screen");
+    startScreen.classList.add("hide");
     var endScreenEl = document.getElementById("end-screen");
     endScreenEl.classList.add("hide");
     highScoreScreen.classList.add("show");
@@ -177,14 +190,23 @@ var displayHighScore = function () {
         // display on page
         document.getElementById("score-list").appendChild(scoreLi);
       }
-      
     }
+}
 
-
-
-
-};
+function clear () {
+    localStorage.clear();
+    scoresList.setAttribute("class", "hide");
+}
 
 startButton.addEventListener("click", startQuiz);
 
 submitButton.addEventListener("click", saveHighScore);
+
+highScoreButton.addEventListener("click", displayHighScore);
+
+playAgain.addEventListener("click", function() {
+    location.href = "index.html"
+});
+
+clearScores.addEventListener("click", clear);
+
