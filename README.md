@@ -28,4 +28,4 @@ THEN I can save my initials and score
 - ![Screenshot](js.JPG)
 
 # URL
-Link to deployed app: 
+Link to deployed app: https://1tbrooks1.github.io/js-quiz/
