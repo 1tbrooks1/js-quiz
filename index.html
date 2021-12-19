@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="develop/assets/css/style.css"/>
+    <link rel="stylesheet" href="develop/assets/css/style.css" />
     <title>JavaScript Quiz</title>
   </head>
 
@@ -24,37 +24,43 @@
         <button id="start" class="button">Begin Quiz</button>
         <button id="view-highscores" class="button">High Scores</button>
       </div>
-    
 
-    <!-- Question page -->
-      <div id="questions" class="hide questions-page">
-        <h2 id="question-title"></h2>
-        <button id="choiceA" class="choices"></button>
-        <button id="choiceB" class="choices"></button>
-        <button id="choiceC" class="choices"></button>
-        <button id="choiceD" class="choices"></button>
+      <!-- Question page -->
+      <div class="question-container">
+        <div id="questions" class="hide questions-page">
+          <h2 id="question-title"></h2>
+          <button id="choiceA" class="button"></button>
+          <button id="choiceB" class="button"></button>
+          <button id="choiceC" class="button"></button>
+          <button id="choiceD" class="button"></button>
+        </div>
       </div>
-    
 
-    <!-- End of quiz page -->
+      <!-- End of quiz page -->
       <div id="end-screen" class="end-screen hide">
         <h2>Congratulations!</h2>
         <p>Your final score is: <span id="final-score"></span></p>
         <p>
-          <input type="text" id="initials" class="submit" placeholder="Enter Initials"/>
+          <input
+            type="text"
+            id="initials"
+            class="submit"
+            placeholder="Enter Initials"
+          />
           <button id="submit" class="submit">Submit</button>
         </p>
       </div>
       <div id="feedback" class="feedback-hide"></div>
-    
 
-    <!-- HighScore page -->
-    <div id="highscore-screen" class="highscore-screen hide">
-        <h2>High Scores</h2>
-        <div id="score-list" class="score-list"></div>
-        <button id="play-again" class="high-button">Play Again</button>
-        <button id="clear-scores" class="high-button">Clear High Scores</button>
-    </div>
+      <!-- HighScore page -->
+      <div class="highscore-container">
+        <div id="highscore-screen" class="highscore-screen hide">
+          <h2>High Scores</h2>
+          <div id="score-list" class="score-list"></div>
+          <button id="play-again" class="button">Play Again</button>
+          <button id="clear-scores" class="button">Clear High Scores</button>
+        </div>
+      </div>
     </div>
     <script src="develop/assets/js/script.js"></script>
   </body>

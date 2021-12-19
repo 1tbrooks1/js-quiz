@@ -11,9 +11,9 @@ body {
 }
 
 .start,
-#question-title,
+.question-container,
 #end-screen,
-.highscore-screen {
+.highscore-container {
   text-align: center;
   position: relative;
   top: 250px;
@@ -38,6 +38,7 @@ body {
   color: rgb(211, 35, 35);
   text-align: center;
   transition: all 0.2s;
+  margin-top: 35px;
 }
 
 .button:hover,
@@ -73,33 +74,10 @@ p {
   font-size: 24px;
 }
 
-.high-button {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  display: inline-block;
-  padding: 0.35em 1.2em;
-  border: 0.1em solid #ffffff;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: rgb(211, 35, 35);
-  text-align: center;
-  transition: all 0.2s;
+.highscore-screen,
+h2 {
   position: relative;
-  left: 785px;
-}
-
-.high-button:hover {
-color: #000000;
-background-color: #ffffff;
-}
-
-.highscore-screen, h2 {
-    position: relative;
-    left: 25px;
+  left: 25px;
 }
 
 .hide {

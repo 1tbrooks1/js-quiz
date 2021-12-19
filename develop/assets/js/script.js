@@ -63,7 +63,7 @@ var questions = [
 
 var currentQuestionIndex = 0;
 var timerId;
-var time = 1200;
+var time = 120;
 
 var startQuiz = function () {
   var startScreen = document.getElementById("start-screen");
