@@ -28,7 +28,7 @@ var questions = [
     answer: "Both A and B",
   },
   {
-    title: "Which method returns the character at the specified index?",
+    title: "Which method out of the choices below returns the character at the specified index?",
     a: "characterAt()",
     b: "getCharAt()",
     c: "charAt()",
@@ -36,7 +36,7 @@ var questions = [
     answer: "charAt()",
   },
   {
-    title: "Which of the following is not a mouse event?",
+    title: "Out of the following choices below, which of these is not a mouse event?",
     a: "onmousescroller",
     b: "onclick",
     c: "onmouseover",
@@ -44,7 +44,7 @@ var questions = [
     answer: "onmousescroller",
   },
   {
-    title: "The opposite of onmouseover is_____?",
+    title: "When it comes to mouse events, the opposite of onmouseover is_____?",
     a: "onmouseoff",
     b: "onmouseout",
     c: "onmouseunder",
@@ -52,18 +52,18 @@ var questions = [
     answer: "onmouseout",
   },
   {
-    title: " How to know the number of elements of a form??",
-    a: "document.myform.elements.count",
-    b: "document.myform.length",
-    c: "document.myform.count",
-    d: "document.myform.elements.length",
-    answer: "document.myform.elements.length",
+    title: "Which method returns the string starting at the specified position?",
+    a: "substr()",
+    b: "getSubstring()",
+    c: "slice()",
+    d: "None of the answers above",
+    answer: "substr()",
   },
 ];
 
 var currentQuestionIndex = 0;
 var timerId;
-var time = 120;
+var time = 1200;
 
 var startQuiz = function () {
   var startScreen = document.getElementById("start-screen");
@@ -118,7 +118,7 @@ var checkAnswer = function (event) {
   feedbackEl.setAttribute("class", "feedback");
   setInterval(function () {
     feedbackEl.setAttribute("class", "feedback hide");
-  }, 750);
+  }, 800);
 
   currentQuestionIndex++;
 

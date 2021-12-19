@@ -21,13 +21,13 @@
       <div id="start-screen" class="start">
         <h1>JavaScript Quiz Challenge</h1>
         <p></p>
-        <button id="start">Begin Quiz</button>
-        <button id="view-highscores">High Scores</button>
+        <button id="start" class="button">Begin Quiz</button>
+        <button id="view-highscores" class="button">High Scores</button>
       </div>
     
 
     <!-- Question page -->
-      <div id="questions" class="hide">
+      <div id="questions" class="hide questions-page">
         <h2 id="question-title"></h2>
         <button id="choiceA" class="choices"></button>
         <button id="choiceB" class="choices"></button>
@@ -37,23 +37,23 @@
     
 
     <!-- End of quiz page -->
-      <div id="end-screen" class="hide">
-        <h2></h2>
+      <div id="end-screen" class="end-screen hide">
+        <h2>Congratulations!</h2>
         <p>Your final score is: <span id="final-score"></span></p>
         <p>
-          <input type="text" id="initials" placeholder="Enter Initials"/>
-          <button id="submit">Submit</button>
+          <input type="text" id="initials" class="submit" placeholder="Enter Initials"/>
+          <button id="submit" class="submit">Submit</button>
         </p>
       </div>
       <div id="feedback" class="feedback-hide"></div>
     
 
     <!-- HighScore page -->
-    <div id="highscore-screen" class="hide">
+    <div id="highscore-screen" class="highscore-screen hide">
         <h2>High Scores</h2>
         <div id="score-list" class="score-list"></div>
-        <button id="play-again">Play Again</button>
-        <button id="clear-scores">Clear High Scores</button>
+        <button id="play-again" class="high-button">Play Again</button>
+        <button id="clear-scores" class="high-button">Clear High Scores</button>
     </div>
     </div>
     <script src="develop/assets/js/script.js"></script>

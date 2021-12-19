@@ -1,42 +1,111 @@
+body {
+  background-color: rgb(45, 207, 94);
+}
+
+.timer {
+  font-size: 32px;
+  color: rgb(211, 35, 35);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.start,
+#question-title,
+#end-screen,
+.highscore-screen {
+  text-align: center;
+  position: relative;
+  top: 250px;
+  font-size: 35px;
+  color: rgb(211, 35, 35);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button,
+.choices {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(211, 35, 35);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.button:hover,
+.choices:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.choices {
+  position: relative;
+  left: 525px;
+  top: 275px;
+}
+
+.feedback {
+  text-align: center;
+  font-style: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: rgb(211, 35, 35);
+  position: relative;
+  top: 550px;
+}
+
+.end-screen,
+p {
+  font-size: 35px;
+  font-style: Arial, Helvetica, sans-serif;
+}
+
+.submit {
+  font-size: 24px;
+}
+
+.high-button {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: rgb(211, 35, 35);
+  text-align: center;
+  transition: all 0.2s;
+  position: relative;
+  left: 785px;
+}
+
+.high-button:hover {
+color: #000000;
+background-color: #ffffff;
+}
+
+.highscore-screen, h2 {
+    position: relative;
+    left: 25px;
+}
+
 .hide {
-    display: none;
-  }
+  display: none;
+}
 
 .show {
-    display:contents;
-
+  display: contents;
 }
-  
-  .start {
-    text-align: center;
-  }
-
-  .timer {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-
-  .choices button {
-    display: block;
-  }
-
-  .scores {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-
-  .feedback {
-    font-style: italic;
-    font-size: 120%;
-    margin-top: 20px;
-    padding-top: 10px;
-    color: gray;
-    border-top: 2px solid #ccc;
-  }
-
-  .score-list {
-      display: contents;
-      background-color: bisque;
-  }
