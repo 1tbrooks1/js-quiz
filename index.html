@@ -10,9 +10,6 @@
   </head>
 
   <body>
-      <!-- Link to view high scores -->
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
-
     <!-- Set up for timer -->
     <div class="timer">
       Time:
@@ -25,11 +22,11 @@
         <h1>JavaScript Quiz Challenge</h1>
         <p></p>
         <button id="start">Begin Quiz</button>
+        <button id="view-highscores"></button>
       </div>
     
 
     <!-- Question page -->
-    
       <div id="questions" class="hide">
         <h2 id="question-title"></h2>
         <button id="choiceA" class="choices"></button>
@@ -40,20 +37,25 @@
     
 
     <!-- End of quiz page -->
-    
       <div id="end-screen" class="hide">
         <h2></h2>
-        <p>Your final score is: <span class="final-score"></span>.</p>
+        <p>Your final score is: <span id="final-score"></span></p>
         <p>
           <input type="text" id="initials" placeholder="Enter Initials"/>
           <button id="submit">Submit</button>
         </p>
       </div>
-
       <div id="feedback" class="feedback-hide"></div>
-    </div>
     
 
+    <!-- HighScore page -->
+    <div id="highscore-screen" class="hide">
+        <h2>High Scores</h2>
+        <div id="score-list" class="score-list"></div>
+        <button id="play-again">Play Again</button>
+        <button id="clear-scores">Clear High Scores</button>
+    </div>
+    </div>
     <script src="develop/assets/js/script.js"></script>
   </body>
 </html>

@@ -35,3 +35,8 @@
     color: gray;
     border-top: 2px solid #ccc;
   }
+
+  .score-list {
+      display: contents;
+      background-color: bisque;
+  }
